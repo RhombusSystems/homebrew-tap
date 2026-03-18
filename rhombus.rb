@@ -5,21 +5,21 @@
 class Rhombus < Formula
   desc "CLI for the Rhombus API"
   homepage "https://github.com/RhombusSystems/rhombus-cli"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/RhombusSystems/rhombus-cli/releases/download/v0.3.0/rhombus-cli_0.3.0_darwin_amd64.tar.gz"
-      sha256 "949883d2babd96d882ac97e73d0793365c436c79e63b51d02f560b0ece63549d"
+      url "https://github.com/RhombusSystems/rhombus-cli/releases/download/v0.4.0/rhombus-cli_0.4.0_darwin_amd64.tar.gz"
+      sha256 "ee14f6480f6ac34c196305428f94cabe02daf329410cb8ce05213e78d79654a8"
 
       define_method(:install) do
         bin.install "rhombus"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/RhombusSystems/rhombus-cli/releases/download/v0.3.0/rhombus-cli_0.3.0_darwin_arm64.tar.gz"
-      sha256 "643732168417f98a1683f197844f0805008512216b2036f4afeb8a339f44a878"
+      url "https://github.com/RhombusSystems/rhombus-cli/releases/download/v0.4.0/rhombus-cli_0.4.0_darwin_arm64.tar.gz"
+      sha256 "0bd9a5d919cb69283be27ccd8c07c27e4dbb22938a1b7af374d7744bfc781622"
 
       define_method(:install) do
         bin.install "rhombus"
@@ -29,15 +29,15 @@ class Rhombus < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RhombusSystems/rhombus-cli/releases/download/v0.3.0/rhombus-cli_0.3.0_linux_amd64.tar.gz"
-      sha256 "575ceb94c522163fd1985d43aeb95cf11e5d4958801d88071c4f0e822affc42e"
+      url "https://github.com/RhombusSystems/rhombus-cli/releases/download/v0.4.0/rhombus-cli_0.4.0_linux_amd64.tar.gz"
+      sha256 "08d75eebd40a1e23bf3e0f50b124b722b57305f3d5b13901aa2bfaefd4f43186"
       define_method(:install) do
         bin.install "rhombus"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/RhombusSystems/rhombus-cli/releases/download/v0.3.0/rhombus-cli_0.3.0_linux_arm64.tar.gz"
-      sha256 "90d9c02bb2f623bce92c09d424ddf36986475745f8a5667f29f95a99fe2c21b9"
+      url "https://github.com/RhombusSystems/rhombus-cli/releases/download/v0.4.0/rhombus-cli_0.4.0_linux_arm64.tar.gz"
+      sha256 "bc0c0b20554be6f07d42afc1388b1459753c1a265550dc8991e6624dc6b5c25e"
       define_method(:install) do
         bin.install "rhombus"
       end
